@@ -113,8 +113,11 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STATIC_ROOT = "/var/www/django-example-app/static"
-STATICFILES_DIRS = [BASE_DIR / "static"]
+# STATIC_ROOT = "/var/www/django-example-app/static"
+# STATICFILES_DIRS = [BASE_DIR / "static"]
+
+STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
+STATIC_URL = '/static/'
 
 CSRF_TRUSTED_ORIGINS = [
     "http://*.compute.amazonaws.com"
