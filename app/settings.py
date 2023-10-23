@@ -116,4 +116,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = "/var/www/django-example-app/static"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
-CSRF_TRUSTED_ORIGINS = ['http://ec2-18-222-151-242.us-east-2.compute.amazonaws.com']
+CSRF_TRUSTED_ORIGINS = [
+    'http://ec2-18-222-151-242.us-east-2.compute.amazonaws.com'
+]
