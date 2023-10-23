@@ -42,6 +42,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+staticfiles/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -276,3 +277,4 @@ pyvenv.cfg
 pip-selfcheck.json
 *env/
 # End of https://www.toptal.com/developers/gitignore/api/django,python,virtualenv 
+
