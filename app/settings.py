@@ -118,4 +118,5 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://*.compute.amazonaws.com"
+    "https://*.charles.mx"
 ]
