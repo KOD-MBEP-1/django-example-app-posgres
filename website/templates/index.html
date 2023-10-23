@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My watch list</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-black text-white px-5 pt-10 flex flex-col justify-center items-center gap-20"
+  >
+    <h1 class="text-6xl">🎥 My Watch list 🎥</h1>
+
+    {% if not movies %}
+    <h2 class="text-2xl">No movies in your watch list</h2>
+    <p class="text-6xl">¯\_(ツ)_/¯</p>
+    {% endif %}
+
+    <main class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      {% for movie in movies %}
+      <article
+        class="flex flex-col justify-between hover:ring hover:cursor-pointer hover:ring-red-500 rounded hover:scale-105 transition-all duration-500 border border-neutral-50/10"
+      >
+        <img
+          src="{{ movie.image }}"
+          alt="{{ movie.title }}"
+          class="w-full object-cover object-center"
+        />
+        <h2 class="text-center text-2xl p-4">{{ movie.title }}</h2>
+      </article>
+      {% endfor %}
+    </main>
+  </body>
+</html>
