@@ -120,6 +120,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
 STATIC_URL = '/static/'
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://*.compute.amazonaws.com"
+    "http://*.compute.amazonaws.com",
     "https://*.charles.mx"
 ]
