@@ -117,5 +117,5 @@ STATIC_ROOT = "/var/www/django-example-app/static"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://*.compute.amazonaws.com'
+    "http://*.compute.amazonaws.com"
 ]
